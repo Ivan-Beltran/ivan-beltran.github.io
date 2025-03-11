@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .grid-item{
+            transition: all 0.3 ease;
+        }
+        .grid-item:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0, 0,0,0.1), 0 4px 6px -2px rgb(0, 0,0,0.05)
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-purple-900 to-indigo-800 min-h-screen font-sans text-white">
+    <header class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center ">
+            <div class="md:cols-span-1">
+                <h1 class="text-4xl font-bold">Grid Master</h1>
+                <p class="text-purple-200">poder y flexibilidad con tailwind css</p>
+            </div>
+            <nav class="md:col-span-2">
+                <ul class="grid grid-cols-3 gap-2 text-center">
+                    <li class="bg-purple-700/70  py-2 rounded-lg hover:opacity-70 hover:scale-105 hover:border b-2 cursor-pointer">inicio</li>
+                    <li class="bg-purple-700/70  py-2 rounded-lg hover:opacity-70 cursor-pointer  hover:border b-2">ejemplos</li>
+                    <li class="bg-purple-700/70  py-2 rounded-lg hover:opacity-70 cursor-pointer  hover:border b-2">contactos</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-5xl font-bold mb-4">domina el grid system</h2>
+                <p class="text-xl text-purple-200 mb-6">diseña layouts complejos y responsivos con el poder de css grid implementado en tailwind</p>
+                <button class="bg-gradient-to-r from-pink-500 to purple-600 px-8 border b-1 py-3 rounded-lg text-lg font-semibold haver:from-pink-600 hover:scale-103">aprender mas</button>
+            </div>
+            <div class="grid grid-cols-4 grid-rows-8 gap-2 h-64 ">
+                <div class="bg-pink-500 rounded-lg col-span-2 row-span-2   hover:scale-102 hover:border b-1">
+                    <img src="https://3.bp.blogspot.com/--sSJOQ21ZAI/T2OM3EsJBqI/AAAAAAAAWzw/X9wC3pEDjY4/s1600/Los-mas-Hermosos-Paisajes-Naturales_06.jpg" alt="" class="w-full h-full object-cover overflow-hidden">
+                </div>
+    
+                <div class="bg-purple-500 rounded-lg col-span-2 row-span-3  hover:scale-102 hover:border b-1">
+                    <img src="https://th.bing.com/th/id/R.a1d69d43cdca15c509ded6a45b2a87ba?rik=AuLSFASOlg%2fSWg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-xUMPrK8VewU%2fUWHFHjRZYBI%2fAAAAAAAAVD8%2f8dX8yrnbTW4%2fs1600%2fpaisajes-fotografias%2b(2).jpg&ehk=VYVd0pJuhINvgaFz3KU7HsQqbxtrg0OHrvLjc%2fKaORY%3d&risl=&pid=ImgRaw&r=0" alt="" class="w-full h-full object-cover overflow-hidden">
+                </div>
+                <div class="bg-blue-500 rounded-lg col-span-2 row-span-3  hover:scale-102 hover:border b-1" class="w-[90%] h-auto">
+                    <img src="https://th.bing.com/th/id/OIP.XjZ7UkPxfi48c-S2MQwP5wHaEo?rs=1&pid=ImgDetMain" alt="" class="w-full h-full object-cover overflow-hidden">
+                </div>
+                <div class="bg-indigo-500 rounded-lg col-span-2 row-span-2  hover:scale-102 hover:border b-1">
+                    <img src="https://uneg.edu.mx/wp-content/uploads/2023/04/P10-1-min.jpg" alt="" class="w-full h-full object-cover overflow-hidden">
+                </div>
+                <div class="bg-green-500 rounded-lg col-span-4 row-span-4  hover:scale-102 hover:border b-1 ">
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/3NDORWTMGNG5ZC4OKIBLKKQC2M.jpg" alt="" class="w-full h-full object-cover overflow-hidden">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid grid-col-1 md:grid-cols-2 gap-8 items-center lg:grid-cols-4">
+            <div class="grid-item bg-gradient-to-br from-blue-800 to-blue-900 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3">grid template rows</h3>
+                <p class="text-blue-200">define filas con grid-rows-{n} o grid-rows-[pattern]</p>
+            </div>
+            <div class="grid-item bg-gradient-to-br from-blue-800 to-blue-900 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3">grid template rows</h3>
+                <p class="text-blue-200">define filas con grid-rows-{n} o grid-rows-[pattern]</p>
+            </div>
+            <div class="grid-item bg-gradient-to-br from-blue-800 to-blue-900 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3">grid template rows</h3>
+                <p class="text-blue-200">define filas con grid-rows-{n} o grid-rows-[pattern]</p>
+            </div>
+            <div class="grid-item bg-gradient-to-br from-blue-800 to-blue-900 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3">grid template rows</h3>
+                <p class="text-blue-200">define filas con grid-rows-{n} o grid-rows-[pattern]</p>
+            </div>
+            <div class="grid-item bg-gradient-to-br from-blue-800 to-blue-900 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3">grid template rows</h3>
+                <p class="text-blue-200">define filas con grid-rows-{n} o grid-rows-[pattern]</p>
+            </div>
+            <div class="grid-item bg-gradient-to-br from-blue-800 to-blue-900 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3">grid template rows</h3>
+                <p class="text-blue-200">define filas con grid-rows-{n} o grid-rows-[pattern]</p>
+            </div>
+            <div class="grid-item bg-gradient-to-br from-blue-800 to-blue-900 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3">grid template rows</h3>
+                <p class="text-blue-200">define filas con grid-rows-{n} o grid-rows-[pattern]</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
